@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>用户主页</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>欢迎, <span id="usernameDisplay"></span></h1>
+        <nav>
+            <a href="index.html">主页</a>
+            <a href="about.html">关于我们</a>
+            <a href="logout.html">退出</a>
+        </nav>
+    </header>
+    <main>
+        <section id="newPost">
+            <h2>发布新帖子</h2>
+            <form id="postForm">
+                <label for="postContent">内容:</label>
+                <textarea id="postContent" name="postContent" required></textarea>
+                <button type="submit">发布</button>
+            </form>
+        </section>
+        <section id="userPosts">
+            <h2>我的帖子</h2>
+            <div id="postsList">
+                <!-- 用户帖子将会动态加载 -->
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
